@@ -1,5 +1,6 @@
 var mongodb = require("mongodb");
 var mongoClient = mongodb.MongoClient;
+require("dotenv").config();
 // -----------
 const connectDB = async () => {
   const connection = await mongoClient.connect(process.env.MONGODB_URL);

@@ -19,7 +19,7 @@ app.use(express.json());
 const session = require("express-session");
 app.use(
   session({
-    secret: process.env.cookieKey,
+    secret: `${process.env.cookieKey}`,
     resave: true,
     saveUninitialized: true,
   })
