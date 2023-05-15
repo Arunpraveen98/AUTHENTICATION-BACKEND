@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "chatter-box-backend",
+  "name": "mern-authentication-backend",
   "builds": [
     {
       "src": "./index.js",

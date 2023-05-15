@@ -1,10 +1,13 @@
 {
-  "name": "mern-authentication",
+  "name": "mern-authentication-backend",
   "version": "1.0.0",
   "description": "This is authentication by using MERN,nodemailer and Passport",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=14 <19"
   },
   "author": "ARUN PRAVEEN R",
   "license": "ISC",
