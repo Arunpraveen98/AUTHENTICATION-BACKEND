@@ -3,7 +3,7 @@ var router = express.Router();
 const passport = require("passport");
 require("dotenv").config();
 // ----------------------------
-const CLIENT_URL = `${process.env.CLIENT_URL}/user`;
+// const client_url = `${process.env.CLIENT_URL}/user`;
 // ----------------------------
 router.get("/login/success", (req, res) => {
   if (req.user) {
@@ -47,7 +47,7 @@ router.get(
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: CLIENT_URL,
+    successRedirect: `${process.env.CLIENT_URL}/user`,
     failureRedirect: "/login/failed",
   })
 );
@@ -62,7 +62,7 @@ router.get(
 router.get(
   "/github/callback",
   passport.authenticate("github", {
-    successRedirect: CLIENT_URL,
+    successRedirect: `${process.env.CLIENT_URL}/user`,
     failureRedirect: "/login/failed",
   })
 );
